@@ -11,7 +11,7 @@ import plotly.graph_objs as go
 from plotly.subplots import make_subplots
 
 app = dash.Dash(__name__)
-
+server = app.server
 # Import data
 
 df = pd.read_csv("whisky.csv", delimiter=',')
